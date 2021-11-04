@@ -12,3 +12,13 @@ function staircase(n) {
     };
     
 }
+
+function staircase2(n) {
+  string = ' ';
+  space = ' ';
+  for(let i = 0; i < n; i++) {
+    string += '#';
+    let stair = space.repeat(n - i) + string;
+    console.log(stair);
+  }
+}
